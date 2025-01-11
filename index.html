@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Neon Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #111;
+            color: #eee;
+        }
+
+        header {
+            background: #111;
+            color: #0afff5;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 2px solid #0afff5;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #0afff5;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: rgba(10, 255, 245, 0.2);
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        section#home {
+            background: #222;
+            color: #0afff5;
+            padding-bottom: 100px;
+        }
+
+        section#home img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #0afff5;
+            margin: 20px 0;
+            box-shadow: 0 0 15px #0afff5;
+        }
+
+        h1, h2 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-shadow: 0 0 8px #0afff5;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #0afff5;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        section#about, section#skills, section#projects, section#contact {
+            background-color: #111;
+            color: #eee;
+            border-bottom: 2px solid #0afff5;
+            font: 1em sans-serif;
+        }
+
+        section#skills ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        section#skills ul li {
+            list-style: none;
+            font-size: 1.2rem;
+            background: #0afff5;
+            color: #111;
+            padding: 10px 20px;
+            border-radius: 25px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .project {
+            margin: 30px 0;
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4);
+            border: 1px solid #0afff5;
+        }
+
+        footer {
+            background-color: #111;
+            color: #0afff5;
+            padding: 15px 0;
+            text-align: center;
+            border-top: 2px solid #0afff5;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <img alt="profile pic" width="150" height="150" src="image.png">
+        <h1>Soshil Mukhiya</h1>
+        <p>Web Developer | Designer | Freelancer</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I’m Soshil Mukhiya, a passionate "web developer," "designer," "data analyst" with a knack for "creating user-friendly websites," "designing captivating visuals," "solving complex data problems".
+            I specialize in "HTML, CSS, JavaScript, and Python", and I thrive on crafting "functional and visually appealing digital experiences". My journey into web development began with a fascination with coding during my school days, and since then, I’ve honed my skills through education, projects, or work experience.
+            Beyond my work, I enjoy "exploring new recipes, reading mystery novels, or hiking in nature". These passions inspire my creativity and keep me grounded.
+            Feel free to explore my projects, and if you’d like to collaborate or simply say hello, don’t hesitate to contact me.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Online Portfolio</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Temperature Converter</p>
+        </div>
+        <div class="project">
+            <h3>Project 3</h3>
+            <p>Responsive Landing Page</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: sushilmq123@gmail.com</p>
+        <p>Phone: 123-456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Soshil Mukhiya. All rights reserved.</p>
+    </footer>
+</body>
+</html>
